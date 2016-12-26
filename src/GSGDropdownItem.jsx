@@ -10,13 +10,26 @@ export default class GSGDropdownItem extends React.Component {
 
   render() {
     let _item = this.props.item;
+    let _itemDOM = {};
 
-    return(
+    _itemDOM = (
       <li><a>{_item.props.children}</a></li>
     );
+
+    if (_item.props.isDivider) {
+      _itemDOM = (
+        <li className="divider"></li>
+      );  
+    }    
+
+    return _itemDOM;
   }
 };
 
-GSGDropdownItem.propTypes = {};
+GSGDropdownItem.propTypes = {
+  isDivider: PropTypes.bool
+};
 
-GSGDropdownItem.defaultProps = {};
+GSGDropdownItem.defaultProps = {
+  isDivider: false
+};

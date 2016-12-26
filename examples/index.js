@@ -25,7 +25,7 @@ class Page extends React.Component {
             <DropdownItem>Python</DropdownItem>
             <DropdownItem>Golang</DropdownItem>
             <DropdownItem isDivider></DropdownItem>
-            <DropdownItem>Amazon Web Services</DropdownItem>            
+            <DropdownItem>Amazon Web Services</DropdownItem>
           </Dropdown>
 
           <Dropdown title={_title} bStyle="primary">
@@ -35,7 +35,7 @@ class Page extends React.Component {
             <DropdownItem>Python</DropdownItem>
             <DropdownItem>Golang</DropdownItem>
             <DropdownItem isDivider></DropdownItem>
-            <DropdownItem>Amazon Web Services</DropdownItem>            
+            <DropdownItem>Amazon Web Services</DropdownItem>
           </Dropdown>
 
           <Dropdown title={_title} bStyle="success">
@@ -45,7 +45,7 @@ class Page extends React.Component {
             <DropdownItem>Python</DropdownItem>
             <DropdownItem>Golang</DropdownItem>
             <DropdownItem isDivider></DropdownItem>
-            <DropdownItem>Amazon Web Services</DropdownItem>            
+            <DropdownItem>Amazon Web Services</DropdownItem>
           </Dropdown>
 
           <Dropdown title={_title} bStyle="info">
@@ -55,7 +55,7 @@ class Page extends React.Component {
             <DropdownItem>Python</DropdownItem>
             <DropdownItem>Golang</DropdownItem>
             <DropdownItem isDivider></DropdownItem>
-            <DropdownItem>Amazon Web Services</DropdownItem>            
+            <DropdownItem>Amazon Web Services</DropdownItem>
           </Dropdown>
 
           <Dropdown title={_title} bStyle="warning">
@@ -65,7 +65,7 @@ class Page extends React.Component {
             <DropdownItem>Python</DropdownItem>
             <DropdownItem>Golang</DropdownItem>
             <DropdownItem isDivider></DropdownItem>
-            <DropdownItem>Amazon Web Services</DropdownItem>            
+            <DropdownItem>Amazon Web Services</DropdownItem>
           </Dropdown>
 
           <Dropdown title={_title} bStyle="danger">
@@ -75,9 +75,78 @@ class Page extends React.Component {
             <DropdownItem>Python</DropdownItem>
             <DropdownItem>Golang</DropdownItem>
             <DropdownItem isDivider></DropdownItem>
-            <DropdownItem>Amazon Web Services</DropdownItem>            
+            <DropdownItem>Amazon Web Services</DropdownItem>
           </Dropdown>
         </p>
+
+        <p className="dropdown-eg-group">
+          <h4>Dropdown Sizes</h4>
+
+          <Dropdown title={_title} bSize="lg">
+            <DropdownItem>JavaScript</DropdownItem>
+            <DropdownItem>Node.js</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Python</DropdownItem>
+            <DropdownItem>Golang</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Amazon Web Services</DropdownItem>
+          </Dropdown>
+
+          <Dropdown title={_title} bSize="sm">
+            <DropdownItem>JavaScript</DropdownItem>
+            <DropdownItem>Node.js</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Python</DropdownItem>
+            <DropdownItem>Golang</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Amazon Web Services</DropdownItem>
+          </Dropdown>
+
+          <Dropdown title={_title} bSize="xs">
+            <DropdownItem>JavaScript</DropdownItem>
+            <DropdownItem>Node.js</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Python</DropdownItem>
+            <DropdownItem>Golang</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Amazon Web Services</DropdownItem>
+          </Dropdown>
+        </p>
+
+        <p className="dropdown-eg-group">
+          <h4>Dropdown Variations</h4>
+
+          <Dropdown title={_title} isDropup>
+            <DropdownItem>JavaScript</DropdownItem>
+            <DropdownItem>Node.js</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Python</DropdownItem>
+            <DropdownItem>Golang</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Amazon Web Services</DropdownItem>
+          </Dropdown>
+
+          <Dropdown title={_title} isRight>
+            <DropdownItem>JavaScript</DropdownItem>
+            <DropdownItem>Node.js</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Python</DropdownItem>
+            <DropdownItem>Golang</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Amazon Web Services</DropdownItem>
+          </Dropdown>
+
+          <Dropdown title={_title} isDropup isRight>
+            <DropdownItem>JavaScript</DropdownItem>
+            <DropdownItem>Node.js</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Python</DropdownItem>
+            <DropdownItem>Golang</DropdownItem>
+            <DropdownItem isDivider></DropdownItem>
+            <DropdownItem>Amazon Web Services</DropdownItem>
+          </Dropdown>
+        </p>
+
       </div>
     );
   }
