@@ -3,7 +3,7 @@ import './index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Dropdown, DropdownItem, DropdownDivider } from '../dist/index.min';
+import { Dropdown, DropdownItem } from '../dist/index.min';
 
 class Page extends React.Component {
   render() {

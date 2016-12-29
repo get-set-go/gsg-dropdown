@@ -1,6 +1,6 @@
 {
   "name": "gsg-dropdown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get-Set-Go dropdown component",
   "main": "dist/index.min.js",
   "scripts": {
