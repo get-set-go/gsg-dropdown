@@ -4,23 +4,17 @@ import classNames from 'classnames';
 import objectAssign from 'object-assign';
 
 export default class GSGDropdownItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    let _item = this.props.item;
-    let _itemDOM = {};
-
-    _itemDOM = (
+    const { _item } = this.props;
+    let _itemDOM = (
       <li><a>{_item.props.children}</a></li>
     );
 
     if (_item.props.isDivider) {
       _itemDOM = (
         <li className="divider"></li>
-      );  
-    }    
+      );
+    }
 
     return _itemDOM;
   }

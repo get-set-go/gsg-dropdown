@@ -23,12 +23,9 @@ export default class GSGDropdown extends React.Component {
   render() {
     let _bClass = {
       'btn': true,
-      'dropdown-toggle': true
-    };
-
-    _bClass = objectAssign(_bClass, {
+      'dropdown-toggle': true,
       [`btn-${this.props.bStyle}`]: true
-    });
+    };
 
     if (this.props.bSize) {
       _bClass = objectAssign(_bClass, {
@@ -67,8 +64,8 @@ export default class GSGDropdown extends React.Component {
     }
 
     _bMenuClass = classNames(_bMenuClass);
- 
-    let _listItems = this.props.children.map((listitem) => <DropdownItem key={listitem.index} item={listitem}></DropdownItem>);
+
+    let _listItems = this.props.children.map((listitem) => <DropdownItem key={listitem.index} _item={listitem}></DropdownItem>);
 
     return (
       <div className={_bDropClass}>
