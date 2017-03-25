@@ -9,11 +9,14 @@
     "start:prod": "webpack-dev-server --config \"./configs/build/prod.webpack.config.js\" --content-base src/ --progress",
     "bundle": "yarn run clean:dist && webpack --config \"./configs/build/dev.webpack.config.js\" --progress -p -d",
     "build": "yarn run clean:dist && yarn run lint && webpack --config \"./configs/build/prod.webpack.config.js\" --progress -p",
+    "eg:bundle": "npm run clean:eg && webpack --config \"./example/webpack.config.js\" --progress -d --watch",
+    "eg:build": "npm run clean:eg && webpack --config \"./example/webpack.config.js\" --progress -p -d",
     "test": "yarn run clean:coverage && jest --bail --verbose --coverage",
     "lint": "eslint configs src",
     "lint:fix": "eslint --fix configs src",
     "clean:dist": "rimraf dist",
-    "clean:coverage": "rimraf coverage"
+    "clean:coverage": "rimraf coverage",
+    "clean:eg": "rimraf example/dist"
   },
   "repository": {
     "type": "git",
